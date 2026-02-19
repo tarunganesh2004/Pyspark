@@ -1,0 +1,51 @@
+customer_id,customer_name,city,state,postal_code,region,segment
+S001,John Carter,Miami,Florida,33101,South,Consumer
+S002,Emily Watson,Orlando,Florida,32801,South,Corporate
+S003,Daniel Brooks,Tampa,Florida,33602,South,Home Office
+S004,Sophia Reed,Jacksonville,Florida,32099,South,Consumer
+S005,Liam Foster,Tallahassee,Florida,32301,South,Corporate
+S006,Olivia Price,Atlanta,Georgia,30301,South,Consumer
+S007,Noah Bennett,Savannah,Georgia,31401,South,Home Office
+S008,Ava Simmons,Augusta,Georgia,30901,South,Consumer
+S009,William Hayes,Charlotte,North Carolina,28202,South,Corporate
+S010,Isabella Long,Raleigh,North Carolina,27601,South,Consumer
+S011,James Ross,Columbia,South Carolina,29201,South,Corporate
+S012,Mia Kelly,Charleston,South Carolina,29401,South,Consumer
+S013,Benjamin Cox,Greenville,South Carolina,29601,South,Home Office
+S014,Charlotte Ward,Nashville,Tennessee,37201,South,Consumer
+S015,Elijah Gray,Memphis,Tennessee,38103,South,Corporate
+S016,Amelia James,Knoxville,Tennessee,37902,South,Consumer
+S017,Lucas Perry,Birmingham,Alabama,35203,South,Home Office
+S018,Harper Butler,Montgomery,Alabama,36104,South,Consumer
+S019,Henry Barnes,Mobile,Alabama,36602,South,Corporate
+S020,Evelyn Cooper,Jackson,Mississippi,39201,South,Consumer
+S021,Alexander Richardson,Little Rock,Arkansas,72201,South,Consumer
+S022,Abigail Cox,New Orleans,Louisiana,70112,South,Corporate
+S023,Michael Howard,Baton Rouge,Louisiana,70801,South,Consumer
+S024,Emily Ward,Shreveport,Louisiana,71101,South,Home Office
+S025,Joseph Torres,Houston,Texas,77001,South,Consumer
+S026,Grace Peterson,Dallas,Texas,75201,South,Corporate
+S027,Daniel Ramirez,Austin,Texas,73301,South,Consumer
+S028,Lily Morris,San Antonio,Texas,78201,South,Home Office
+S029,Anthony Rogers,Fort Worth,Texas,76102,South,Consumer
+S030,Zoey Reed,El Paso,Texas,79901,South,Corporate
+S031,Christopher Bailey,Oklahoma City,Oklahoma,73101,South,Consumer
+S032,Chloe Rivera,Tulsa,Oklahoma,74103,South,Home Office
+S033,Andrew Cooper,Lexington,Kentucky,40502,South,Consumer
+S034,Victoria Bell,Louisville,Kentucky,40202,South,Corporate
+S035,Joshua Bailey,Richmond,Virginia,23219,South,Consumer
+S036,Scarlett Murphy,Norfolk,Virginia,23510,South,Home Office
+S037,Gabriel Cox,Arlington,Virginia,22201,South,Consumer
+S038,Aria Howard,Virginia Beach,Virginia,23451,South,Corporate
+S039,Jackson Ward,Chesapeake,Virginia,23320,South,Consumer
+S040,Penelope Brooks,Greensboro,North Carolina,27401,South,Home Office
+S041,Levi Powell,Winston-Salem,North Carolina,27101,South,Consumer
+S042,Natalie Long,Fayetteville,North Carolina,28301,South,Corporate
+S043,Julian Gray,Huntsville,Alabama,35801,South,Consumer
+S044,Ella James,Tuscaloosa,Alabama,35401,South,Home Office
+S045,Isaac Watson,Biloxi,Mississippi,39530,South,Consumer
+S046,Aubrey Foster,Gulfport,Mississippi,39501,South,Corporate
+S047,Dylan Reed,Little Rock,Arkansas,72201,South,Consumer
+S048,Hannah Kelly,Hot Springs,Arkansas,71901,South,Home Office
+S049,Christian Perry,Mobile,Alabama,36602,South,Consumer
+S050,Addison Hayes,Jackson,Mississippi,39201,South,Corporate

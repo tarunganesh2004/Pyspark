@@ -1,0 +1,51 @@
+customer_id,customer_name,city,state,postal_code,region,segment
+W001,John Allen,Los Angeles,California,90001,West,Consumer
+W002,Emily Scott,San Diego,California,92101,West,Corporate
+W003,Daniel Young,San Jose,California,95101,West,Home Office
+W004,Sophia King,San Francisco,California,94102,West,Consumer
+W005,Liam Wright,Fresno,California,93701,West,Corporate
+W006,Olivia Hill,Sacramento,California,94203,West,Consumer
+W007,Noah Green,Oakland,California,94601,West,Home Office
+W008,Ava Adams,Bakersfield,California,93301,West,Consumer
+W009,William Nelson,Portland,Oregon,97201,West,Corporate
+W010,Isabella Carter,Salem,Oregon,97301,West,Consumer
+W011,James Mitchell,Seattle,Washington,98101,West,Corporate
+W012,Mia Perez,Tacoma,Washington,98402,West,Consumer
+W013,Benjamin Roberts,Spokane,Washington,99201,West,Home Office
+W014,Charlotte Turner,Boise,Idaho,83702,West,Consumer
+W015,Elijah Phillips,Las Vegas,Nevada,88901,West,Corporate
+W016,Amelia Campbell,Reno,Nevada,89501,West,Consumer
+W017,Lucas Parker,Phoenix,Arizona,85001,West,Home Office
+W018,Harper Evans,Tucson,Arizona,85701,West,Consumer
+W019,Henry Edwards,Albuquerque,New Mexico,87101,West,Corporate
+W020,Evelyn Collins,Santa Fe,New Mexico,87501,West,Consumer
+W021,Alexander Stewart,Honolulu,Hawaii,96801,West,Consumer
+W022,Abigail Sanchez,Anchorage,Alaska,99501,West,Corporate
+W023,Michael Morris,Long Beach,California,90802,West,Consumer
+W024,Emily Rogers,Riverside,California,92501,West,Home Office
+W025,Joseph Reed,Stockton,California,95202,West,Consumer
+W026,Grace Cook,Chula Vista,California,91910,West,Corporate
+W027,Daniel Morgan,Irvine,California,92602,West,Consumer
+W028,Lily Bell,Modesto,California,95350,West,Home Office
+W029,Anthony Bailey,San Bernardino,California,92401,West,Consumer
+W030,Zoey Cooper,Oxnard,California,93030,West,Corporate
+W031,Christopher Richardson,Fontana,California,92335,West,Consumer
+W032,Chloe Cox,Salinas,California,93901,West,Home Office
+W033,Andrew Howard,Hayward,California,94541,West,Consumer
+W034,Victoria Ward,Escondido,California,92025,West,Corporate
+W035,Joshua Torres,Sunnyvale,California,94086,West,Consumer
+W036,Scarlett Peterson,Pasadena,California,91101,West,Home Office
+W037,Gabriel Gray,Fullerton,California,92831,West,Consumer
+W038,Aria Ramirez,Orange,California,92866,West,Corporate
+W039,Jackson James,Thousand Oaks,California,91360,West,Consumer
+W040,Penelope Brooks,Visalia,California,93291,West,Home Office
+W041,Levi Powell,Tempe,Arizona,85281,West,Consumer
+W042,Natalie Long,Scottsdale,Arizona,85251,West,Corporate
+W043,Julian Gray,Glendale,Arizona,85301,West,Consumer
+W044,Ella James,Chandler,Arizona,85225,West,Home Office
+W045,Isaac Watson,Everett,Washington,98201,West,Consumer
+W046,Aubrey Foster,Bellevue,Washington,98004,West,Corporate
+W047,Dylan Reed,Vancouver,Washington,98660,West,Consumer
+W048,Hannah Kelly,Beaverton,Oregon,97005,West,Home Office
+W049,Christian Perry,Eugene,Oregon,97401,West,Consumer
+W050,Addison Hayes,Gresham,Oregon,97030,West,Corporate

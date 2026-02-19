@@ -1,0 +1,7 @@
+order_id,cust_id,city,category,amount
+1,101,Houston,Electronics,500
+2,102,Chicago,Clothing,200
+3,101,Houston,Clothing,300
+4,103,New York,Electronics,700
+5,101,Houston,Electronics,200
+6,102,Chicago,Electronics,400

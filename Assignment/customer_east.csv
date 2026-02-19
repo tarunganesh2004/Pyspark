@@ -1,0 +1,51 @@
+customer_id,customer_name,city,state,postal_code,region,segment
+E001,John Carter,New York,New York,10001,East,Consumer
+E002,Emily Watson,Boston,Massachusetts,02108,East,Corporate
+E003,Daniel Brooks,Philadelphia,Pennsylvania,19103,East,Home Office
+E004,Sophia Reed,Newark,New Jersey,07102,East,Consumer
+E005,Liam Foster,Buffalo,New York,14201,East,Corporate
+E006,Olivia Price,Albany,New York,12207,East,Consumer
+E007,Noah Bennett,Syracuse,New York,13202,East,Home Office
+E008,Ava Simmons,Rochester,New York,14604,East,Consumer
+E009,William Hayes,Providence,Rhode Island,02903,East,Corporate
+E010,Isabella Long,Hartford,Connecticut,06103,East,Consumer
+E011,James Ross,Richmond,Virginia,23219,East,Corporate
+E012,Mia Kelly,Norfolk,Virginia,23510,East,Consumer
+E013,Benjamin Cox,Virginia Beach,Virginia,23451,East,Home Office
+E014,Charlotte Ward,Charleston,West Virginia,25301,East,Consumer
+E015,Elijah Gray,Wilmington,Delaware,19801,East,Corporate
+E016,Amelia James,Dover,Delaware,19901,East,Consumer
+E017,Lucas Perry,Baltimore,Maryland,21201,East,Home Office
+E018,Harper Butler,Annapolis,Maryland,21401,East,Consumer
+E019,Henry Barnes,Portland,Maine,04101,East,Corporate
+E020,Evelyn Cooper,Burlington,Vermont,05401,East,Consumer
+E021,Alexander Richardson,Manchester,New Hampshire,03101,East,Consumer
+E022,Abigail Cox,Trenton,New Jersey,08608,East,Corporate
+E023,Michael Howard,Allentown,Pennsylvania,18101,East,Consumer
+E024,Emily Ward,Erie,Pennsylvania,16501,East,Home Office
+E025,Joseph Torres,Harrisburg,Pennsylvania,17101,East,Consumer
+E026,Grace Peterson,Reading,Pennsylvania,19601,East,Corporate
+E027,Daniel Ramirez,Scranton,Pennsylvania,18503,East,Consumer
+E028,Lily Morris,Yonkers,New York,10701,East,Home Office
+E029,Anthony Rogers,Ithaca,New York,14850,East,Consumer
+E030,Zoey Reed,Binghamton,New York,13901,East,Corporate
+E031,Christopher Bailey,Lowell,Massachusetts,01852,East,Consumer
+E032,Chloe Rivera,Cambridge,Massachusetts,02139,East,Home Office
+E033,Andrew Cooper,Salem,Massachusetts,01970,East,Consumer
+E034,Victoria Bell,Springfield,Massachusetts,01103,East,Corporate
+E035,Joshua Bailey,Brockton,Massachusetts,02301,East,Consumer
+E036,Scarlett Murphy,New Haven,Connecticut,06510,East,Home Office
+E037,Gabriel Cox,Bridgeport,Connecticut,06604,East,Consumer
+E038,Aria Howard,Stamford,Connecticut,06901,East,Corporate
+E039,Jackson Ward,Paterson,New Jersey,07501,East,Consumer
+E040,Penelope Brooks,Jersey City,New Jersey,07302,East,Home Office
+E041,Levi Powell,Elizabeth,New Jersey,07201,East,Consumer
+E042,Natalie Long,Atlantic City,New Jersey,08401,East,Corporate
+E043,Julian Gray,Frederick,Maryland,21701,East,Consumer
+E044,Ella James,Hagerstown,Maryland,21740,East,Home Office
+E045,Isaac Watson,Roanoke,Virginia,24011,East,Consumer
+E046,Aubrey Foster,Lynchburg,Virginia,24504,East,Corporate
+E047,Dylan Reed,Alexandria,Virginia,22314,East,Consumer
+E048,Hannah Kelly,Fairfax,Virginia,22030,East,Home Office
+E049,Christian Perry,Arlington,Virginia,22201,East,Consumer
+E050,Addison Hayes,Chesapeake,Virginia,23320,East,Corporate

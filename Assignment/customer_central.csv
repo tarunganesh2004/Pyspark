@@ -1,0 +1,51 @@
+customer_id,customer_name,city,state,postal_code,region,segment
+C001,  John   Smith  ,  Chicago , Illinois , 60601-123! , Central , Consumer
+C002,  Mary   Johnson , Detroit , Michigan , 48201@ , Central , Corporate
+C003,  Robert   Brown  ,  Columbus , Ohio , 43004# , Central , Home Office
+C004,,Indianapolis,Indiana,46201!,Central,Consumer
+C005,  Patricia   Davis , Milwaukee , Wisconsin , 53202. , Central , Corporate
+C006,  Michael   Miller ,  , Missouri , 63101@ , Central , Consumer
+C007,  Linda   Wilson  , Kansas City , Missouri , 64101# , Central , Home Office
+C008,  William   Moore , Minneapolis , Minnesota , 55401! , Central , Consumer
+C009,  Barbara   Taylor , Omaha , Nebraska , 68102$ , Central , Corporate
+C010,  James   Anderson , Des Moines , Iowa , 50301% , Central , Consumer
+C011,  Elizabeth   Thomas , Wichita , Kansas , 67202^ , Central , Consumer
+C012,  David   Jackson , Fargo , North Dakota , 58102& , Central , Corporate
+C013,  Jennifer   White  , Sioux Falls , South Dakota , 57104* , Central , Home Office
+C014,  Richard   Harris , Lincoln , Nebraska , 68508( , Central , Consumer
+C015,  Susan   Martin  , Madison , Wisconsin , 53703) , Central , Corporate
+C016,  Joseph   Thompson ,  St Louis , Missouri , 63103_ , Central , Consumer
+C017,  Jessica   Garcia , Grand Rapids , Michigan , 49503+ , Central , Home Office
+C018,  Thomas   Martinez , Fort Wayne , Indiana , 46802= , Central , Consumer
+C019,  Sarah   Robinson , Toledo , Ohio , 43604{ , Central , Corporate
+C020,  Charles   Clark ,  Peoria , Illinois , 61602} , Central , Consumer
+C021,  Karen   Rodriguez ,  Rockford , Illinois , 61101[ , Central , Corporate
+C022,  Christopher   Lewis , Evansville , Indiana , 47708] , Central , Consumer
+C023,  Nancy   Lee ,  Cedar Rapids , Iowa , 52401| , Central , Home Office
+C024,  Daniel   Walker , Davenport , Iowa , 52801; , Central , Consumer
+C025,  Lisa   Hall , Springfield , Illinois , 62701: , Central , Corporate
+C026,  Matthew   Allen , Bloomington , Indiana , 47401< , Central , Consumer
+C027,  Betty   Young , Akron , Ohio , 44308> , Central , Home Office
+C028,  Anthony   Hernandez , Dayton , Ohio , 45402? , Central , Consumer
+C029,  Sandra   King , Canton , Ohio , 44702/ , Central , Corporate
+C030,  Mark   Wright , Green Bay , Wisconsin , 54301~ , Central , Consumer
+C031,  Donna   Lopez , Kalamazoo , Michigan , 49007! , Central , Consumer
+C032,  Steven   Hill , Gary , Indiana , 46402@ , Central , Corporate
+C033,  Carol   Scott , Joliet , Illinois , 60431# , Central , Consumer
+C034,  Paul   Green ,  Hammond , Indiana , 46320$ , Central , Home Office
+C035,  Laura   Adams , Flint , Michigan , 48502% , Central , Consumer
+C036,  Kevin   Baker ,  , Ohio , 44101^ , Central , Corporate
+C037,  Amy   Gonzalez , Ann Arbor , Michigan , 48104& , Central , Consumer
+C038,  Brian   Nelson ,  Lansing , Michigan , 48933* , Central , Home Office
+C039,  Angela   Carter ,  Naperville , Illinois , 60540( , Central , Consumer
+C040,  Jason   Mitchell , Schaumburg , Illinois , 60173) , Central , Corporate
+C041,  Rebecca   Perez , Aurora , Illinois , 60505_ , Central , Consumer
+C042,  Ryan   Roberts , Elgin , Illinois , 60120+ , Central , Consumer
+C043,  Megan   Turner , Waukegan , Illinois , 60085= , Central , Corporate
+C044,  Eric   Phillips , Decatur , Illinois , 62521{ , Central , Consumer
+C045,  Kimberly   Campbell ,  Moline , Illinois , 61265} , Central , Home Office
+C046,  Jacob   Parker , Normal , Illinois , 61761[ , Central , Consumer
+C047,  Stephanie   Evans ,  Kankakee , Illinois , 60901] , Central , Corporate
+C048,  Brandon   Edwards ,  Champaign , Illinois , 61820| , Central , Consumer
+C049,  Melissa   Collins ,  Bloomington , Illinois , 61701; , Central , Home Office
+C050,  Justin   Stewart , Rock Island , Illinois , 61201: , Central , Consumer
