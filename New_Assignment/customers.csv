@@ -1,0 +1,13 @@
+customer_id,first_name,last_name,city,state,customer_type,age
+C001,Ravi,Kumar,Hyderabad,TS,Premium,28
+C002,Anita,Sharma,Mumbai,MH,Regular,34
+C003,John,Mathew,Bangalore,KA,Premium,41
+C004,Sara,Ali,Chennai,TN,Regular,22
+C005,David,Paul,Hyderabad,TS,Premium,37
+C006,Meena,Rao,Pune,MH,Regular,30
+C007,Arjun,Reddy,Bangalore,KA,Premium,45
+C008,Priya,Kapoor,Delhi,DL,Regular,26
+C009,Imran,Khan,Chennai,TN,Premium,39
+C010,Latha,Iyer,Mumbai,MH,Regular,33
+C011,Kiran,Das,Delhi,DL,Premium,29
+C012,Neha,Verma,Pune,MH,Regular,31

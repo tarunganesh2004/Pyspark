@@ -1,0 +1,11 @@
+product_id,product_name,category,subcategory,price
+P001,iPhone,Electronics,Mobile,80000
+P002,Galaxy,Electronics,Mobile,75000
+P003,MacBook,Electronics,Laptop,150000
+P004,Sofa,Furniture,LivingRoom,40000
+P005,Table,Furniture,Office,15000
+P006,Chair,Furniture,Office,7000
+P007,TV,Electronics,Television,60000
+P008,Fridge,Electronics,Appliance,45000
+P009,WashingMachine,Electronics,Appliance,38000
+P010,Bed,Furniture,Bedroom,50000
