@@ -1,0 +1,119 @@
+🔥 RDD PRACTICE QUESTIONS
+
+🟠 ADVANCED (MULTI GROUPBY + AGG)
+
+Total revenue per (state, category).
+
+For each customer_type, find:
+
+total orders
+
+total revenue
+
+average order value
+
+Find customers who made more than 1 order AND total spent > 100000.
+
+Find failed payment revenue loss per category.
+
+For each state, find top spending customer.
+
+🔴 JOIN LEVEL
+
+Inner join customers + orders.
+
+Left join orders + payments.
+
+Full outer join customers + orders.
+
+Multi-join: customers + orders + products + payments.
+
+Anti join: customers who never placed orders.
+
+🔥 DATAFRAME QUESTIONS
+
+(Same levels but using DF functions)
+
+🟢 BASIC
+
+Filter Regular customers above age 30.
+
+Show distinct categories.
+
+Count orders per payment_mode.
+
+🟡 INTERMEDIATE
+
+Total revenue per category.
+
+Top 5 expensive products.
+
+State-wise customer count sorted descending.
+
+Average quantity per payment mode.
+
+🟠 ADVANCED
+
+Revenue per (state, customer_type).
+
+For each category:
+
+total quantity
+
+total revenue
+
+avg price
+
+Customers whose avg order value > overall avg order value.
+
+Revenue from failed payments per state.
+
+Window function: rank customers by spending within each state.
+
+🔥 SQL QUESTIONS
+
+Register all as temp views.
+
+🟢 BASIC
+
+Select customers from MH or TS.
+
+Count products per category.
+
+Find total successful payments.
+
+🟡 INTERMEDIATE
+
+Revenue per category.
+
+Customers with more than 2 orders.
+
+Total revenue per state sorted descending.
+
+🟠 ADVANCED
+
+For each customer_type:
+
+total revenue
+
+avg order value
+
+max order value
+
+Find top 2 customers per state (using window functions).
+
+Revenue loss due to failed payments per category.
+
+Customers who never ordered.
+
+⚡ SAMPLE HARD QUESTION (WITH ANSWER)
+🎯 Problem (Common for All 3)
+
+👉 For each state and category, find:
+
+total revenue
+
+total quantity
+
+number of unique customers
+Only include successful payments.
