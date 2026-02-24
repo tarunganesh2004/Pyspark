@@ -1,6 +1,6 @@
 cust_id,name,ctype,email,city
-101,John Doe,Premium,john.doe@email.com,New York
-102,Jane Smith,Regular,jane.smith@business.com,Los Angeles
+101,John doe,Premium,john.doe@email.com,New York
+102,Jane smith,Regular,jane.smith@business.com,Los Angeles
 103,Peter Jones,Premium,p.jones@email.com,Chicago
 104,Mary Brown,Regular,mary.b@email.com,Houston
 105,David Wilson,Premium,dave.w@business.com,Houston
