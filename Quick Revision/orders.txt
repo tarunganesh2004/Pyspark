@@ -1,0 +1,13 @@
+order_id|cust_id|product_id|order_date|quantity|payment_mode|order_status
+O301|C101|P201|2024-03-01|1|Card|Delivered
+O302|C102|P202|2024-03-02|2|UPI|Delivered
+O303|C103|P205|2024-03-03|10|Cash|Cancelled
+O304|C101|P203|2024-03-05|2|Card|Delivered
+O305|C104|P204|2024-03-07|1|UPI|Delivered
+O306|C105|P210|2024-03-10|1|Card|Pending
+O307|C106|P201|2024-03-12|1|UPI|Delivered
+O308|C107|P206|2024-03-15|20|Cash|Delivered
+O309|C108|P208|2024-03-18|1|Card|Cancelled
+O310|C109|P202|2024-03-20|1|Card|Delivered
+O311|C110|P211|2024-03-22|1|UPI|Delivered
+O312|C112|P207|2024-03-25|1|Card|Delivered

@@ -1,0 +1,13 @@
+cust_id|name|gender|city|signup_date|credit_limit
+C101|Tarun|Male|Hyderabad|2024-01-10|50000
+C102|Aisha|Female|Mumbai|2023-12-05|60000
+C103|Ravi|Male|Hyderabad|2024-02-15|45000
+C104|Neha|Female|Chennai|2023-11-20|70000
+C105|Arjun|Male|Delhi|2024-03-01|30000
+C106|Sara|Female|Mumbai|2024-01-25|65000
+C107|Kiran|Male|Delhi|2023-10-10|40000
+C108|Priya|Female|Chennai|2024-02-05|55000
+C109|Imran|Male|Hyderabad|2024-01-18|NULL
+C110|Divya|Female|Delhi|2023-12-28|48000
+C111|Rahul|Male|Mumbai|2024-03-10|52000
+C112|Anita|Female|Hyderabad|2023-11-11|75000

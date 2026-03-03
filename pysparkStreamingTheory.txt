@@ -1,0 +1,275 @@
+Need of pyspark Streaming --> spark core & sql modules perform data processing in the batch mode but not suitable in scenarios 
+where real time data processing is required
+
+Pyspark Streaming
+handling complex computations over data collected in specific time intervals --> window based operations(pyspark streaming feature)
+Data sources(kafka,flume,hdfs,kinesis) --> spark streaming --> output destinations
+Features: Highlevel sql like api,continous processing,fault tolerance,window based operations,data sources and sinks,ml &graph analytics,event time processing
+
+
+1) Dstreams(legacy)
+2) structured streaming
+
+✅ Structured Streaming
+
+It treats streaming data as unbounded DataFrame
+
+👉 You write normal DataFrame code
+👉 Spark internally handles incremental execution
+
+purpose of batch interval --> to specify the time interval for dividing data into batches
+
+Architecture:
+pyspark uses micro batch processing (where in computations happen on small batches of data)
+
+Spark Streaming Workflow
+Spark discretizes (divides) the live streaming data in to small time bounded micro batches
+Batch Interval is the parameter used to decide the size of each batch
+Batch can be as small as one second to as big as multiple hours
+Spark treats each batch of data as RDDs and processes them using RDD operations
+Finally, the processed results of the RDD operations are returned as batches
+
+Internally:
+Data comes in micro-batches
+
+Each micro-batch processed as a small batch job
+
+Result appended to sink
+
+This is called:
+
+Micro-Batch Processing Model
+
+Execution Flow:
+
+Source → Logical Plan → Incremental Execution → Sink
+
+Continuous streams of data get discretized into batches. Computations happen on each batch and output is also in the form of batches. Series of batches (RDDs) are typically called as Discretized Streams (DStreams).
+
+DStreams
+Discretized Stream (DStream) is defined as the fundamental abstraction available from Spark streaming
+It is the data received from the source as continuous streams
+
+ 
+
+As shown above,
+
+DStream can be represented as a series of RDDs where each RDD is the data collected in a defined time interval
+DStreams can be created by either applying high-level operations on other Dstreams or by using input data streams from the source
+All operations that are applied on a DStream get translated into operations on the underlying RDDs
+ 
+
+Receivers
+Spark Streaming launches a Receiver for each input data source
+Receivers are the tasks running in the specific application executors
+Receivers collect the data from input data source and store it as RDD
+Receivers replicate these RDDs for fault tolerance. Spark Streaming provides the way of managing lineage of RDDs which can be used to recompute in case of failures
+For an application to receive data in parallel from various streams, multiple input DStreams can be created. This requires sufficient cores for processing the data received and to run the receivers.
+ 
+
+Note: PySpark streaming libraries provide two ways of performing stream processing. Discretized Streams (DStream) and Structured Streaming. In this course, we will explore both of the APIs
+
+Data source refers to the component from where data can be consumed. Output sink refers to the component to which processed data gets written.
+
+Data Sources:
+File Source(HDFS directory,supports various formats like csv,json,parquet,avro)
+Kafka Source (output columns contain key,value,topic,partition,offset,timestamp)
+Flume(frame work for collecting and moving large amount of log data that can be processed by pyspark streaming applications)
+Socket Source(for testing) --> consumes data from tcp sockets . data received continuously from a specified host and port
+Rate Source(for testing) --> generate data at a specified rate for testing purposes, used for performance  testing, bench marking
+Rate per micro batch source(for testing) --> rate per micro batch source(for testing)
+
+Sinks:
+
+file sinks: write data to files in various formats like csv,json,parquet,avro,orc etc
+kafka sink: write data to apache kafka topics
+console sink: print data to the console for debugging and testing purposes
+delta lake sink: write data to delta lake tables
+jdbc sink: write data to relational database using jdbc
+
+
+DStream Creation:
+1)create StreamingContext object (import from pyspark.streaming)
+Ex: ssc=StreamingContext(sparkContext=sc,batchDuration=10)
+
+step 2
+# create a dstream by connecting to a network socket source
+# data is received using a tcp socket and recieved byte is interpretted as UTF8 encoded in \n delimited lines
+lines= ssc.socketTextStream("localhost",9999)
+
+# each record in this dstream is a line of text 
+
+Step 3
+Apply transformations and actions on the dstream
+# Transformations and actions on the DStream
+word_counts = lines.flatMap(lambda line: line.split(" ")) \
+                   .map(lambda word: (word, 1)) \
+                   .reduceByKey(lambda a, b: a + b)
+# Print the word counts
+word_counts.pprint()
+# Start the streaming context
+ssc.start()
+# Wait for the streaming context to terminate
+ssc.awaitTermination()
+
+# this is called stateless streaming(code gets executed on each rdd recieved in dstream and output gets geenrated in independent batches )
+
+
+Spark DStreams are the basic abstraction in spark streaming,micro batch processing engine of spark 
+
+Dstreams represent a continuous stream of data divided into small,discrete batches
+
+# create an application which streams data from hdfs directory
+
+1) create StreamingContext object (this defines the batch interval for processing DStreams)
+from pyspark import SparkContext
+from pyspark.streaming import StreamingContext
+# Create a SparkContext
+sc = SparkContext(appName="DStreamExample")
+# Create a StreamingContext with a batch interval of 10 second
+ssc = StreamingContext(sparkContext=sc, batchDuration=10)
+
+2) stream the data from hdfs direcotry using textFileStream() and create a Dstream object
+# Define the HDFS directory path
+hdfs_directory = "hdfs path"
+# Create a DStream that monitors the HDFS directory for new files
+SensorDataStream = ssc.textFileStream(hdfs_directory)
+
+3) perform various operations on Dstream
+
+
+Now to deploy(save the complete code with .py )
+
+1) launch application using spark-submit
+spark-submit --master local[2] HDFSDStreams.py
+2) create a hdfs directory in another window and start moving the files
+hadoop fs -mkdir <New directory complete path>
+3) move log files into hdfs directory
+hadoop fs -put sensordata.csv <sourcedirectory>
+
+Other core operations on dstreams: map,flatmap,filter,repartiton,union,reduceByKey,join
+
+
+Structured Streaming
+
+Simplified real-time stream processing engine built on Spark SQL
+Facilitates streaming computation similar to batch data processing
+Consumed real-time structured data can be considered as unbounded table and SQL queries get executed incrementally in a continuous manner
+Highly fault-tolerant and scalable
+Supports low latency continuous processing model
+Supports advanced operations like stream-to-batch joins and window event-time processing
+
+output modes:
+complete --complete modified/updated result table gets streamed to the output sink
+append -- only the new rows appended to result table since the last trigger interval gets streamed to output sink
+         applicable to the queries where already existing records in result table doesnt get modified
+update -- only the updated rows appended to result table since the last trigger interval gets streamed to output sink ,
+            only the modified rows gets written to the external storage
+            if no aggregations in query,then this mode is equal to append
+
+| Mode     | Use Case      | Meaning                   |
+| -------- | ------------- | ------------------------- |
+| append   | new rows only | Only new data             |
+| update   | changed rows  | Only updated aggregations |
+| complete | full result   | Entire table              |
+
+Triggers : --> control execution frequency
+
+WaterMarking-->handling late data (lae arriving data breaks aggregation)
+df = df.withWatermark("event_time", "10 minutes")
+
+
+
+
+# Host and port for the socket stream
+host = "localhost"
+port = 9999
+# Read data from the socket as a streaming DataFrame
+streaming_df = spark.readStream \
+    .format("socket") \
+    .option("host", host) \
+    .option("port", port) \
+    .schema(schema) \
+    .load()
+
+# Output to the console (for demonstration purposes)
+streaming_query = filtered_df.writeStream \
+    .outputMode("append") \
+    .format("console") \
+    .start()
+# Wait for the streaming query to terminate (use Ctrl+C to stop manually)
+streaming_query.awaitTermination()
+# Stop the streaming query
+streaming_query.stop()
+# Stop the SparkSession
+spark.stop()
+
+
+Stream Joins
+1) stream stream join(watermark on both,time conditioning mandatory)
+2) stream - static join(used for enrichment,look up tables)
+
+inner join,outer join,semi joins are the supported operations on stream dataframes
+
+
+# Read messages from Kafka using Structured Streaming
+kafka_stream_df = spark.readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", "localhost:9092,localhost:9093") \
+    .option("subscribe", "SensorDataTopic") \
+    .load()
+
+
+Window operations (used in time based aggregations)
+sliding window
+tumbling windows
+session windows(based on user activity gap)
+
+Stateful operations
+Operations that maintain state:
+Aggregations
+Deduplication
+Stream-stream joins
+
+Spark stores state in:
+State Store
+Checkpoint location
+
+Checkpointing(Fault Tolerance)  --> stores offsets,metadata,state
+.option("checkpointLocation", "chk/")
+without checkpointing:
+exactly - once breaks 
+recovery impossible
+
+Exactly once semantics
+Spark guarantees:
+exactly once for supported sinks
+atleast once for kafka(depends on configuration)
+
+How?
+Offset tracking
+Idempotent writes
+Checkpointing
+
+Performance Tuning:
+1) control parallelism
+2) optimize state store 
+3) trigger tuning:
+lower interval =low latency
+higher interval =high throughput
+
+Backpressure:
+when input rate>processing rate
+
+How?
+Offset tracking
+Idempotent writes
+Checkpointing
+
+Monitoring Streaming Jobs
+use: sparkUi,streaming tab, check:input rate,process rate,batch duration,state size
+
+Production architecture example
+Kafka → Spark Streaming → Parquet → Hive/Delta → BI
+Or:
+IoT → Kafka → Spark → ML Model → Kafka → Dashboard

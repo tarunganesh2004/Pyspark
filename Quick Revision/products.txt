@@ -1,0 +1,13 @@
+product_id|product_name|category|price|stock
+P201|Laptop|Electronics|80000|10
+P202|Mobile|Electronics|30000|25
+P203|Headphones|Electronics|2000|100
+P204|Desk Chair|Furniture|7000|15
+P205|Notebook|Stationery|50|500
+P206|Pen|Stationery|10|1000
+P207|Monitor|Electronics|15000|8
+P208|Table|Furniture|12000|5
+P209|Backpack|Accessories|2500|30
+P210|Shoes|Fashion|4000|20
+P211|Watch|Fashion|9000|12
+P212|Keyboard|Electronics|2500|50
